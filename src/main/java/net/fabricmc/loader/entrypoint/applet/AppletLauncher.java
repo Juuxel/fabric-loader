@@ -181,4 +181,16 @@ public class AppletLauncher extends Applet implements AppletStub {
 		super.setVisible(flag);
 		mcApplet.setVisible(flag);
 	}
+
+	@Override
+	public void addNotify() {
+		super.addNotify();
+		mcApplet.addNotify();
+	}
+
+	@Override
+	public void removeNotify() {
+		super.removeNotify();
+		mcApplet.removeNotify();
+	}
 }
